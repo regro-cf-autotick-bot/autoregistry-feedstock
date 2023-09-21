@@ -1,5 +1,5 @@
 {% set name = "autoregistry" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/autoregistry-{{ version }}.tar.gz
-  sha256: 22212c2c53b938816e8579b6766a4b3198b66eda92609eaab1cb141fc859f1be
+  sha256: 0c42a2034df0a098e7f378ee0bbe52477d8dbdba87d45b75637d2f26c91e06bb
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - poetry-dynamic-versioning >=0.21.5
+    - poetry-dynamic-versioning >=1.0.1
     - python >=3.8
   run:
     - python >=3.8
