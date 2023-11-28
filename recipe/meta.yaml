@@ -1,5 +1,5 @@
 {% set name = "autoregistry" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/autoregistry-{{ version }}.tar.gz
-  sha256: 2ad9850d74e1a88c154c43c81469684472d84623d3b4903b8e4b5fc0365d1ba4
+  sha256: c74147a6492184a9b03a02f16f90bd080eb62d174dec2a9e79e3fd10bbef818f
 
 build:
   noarch: python
